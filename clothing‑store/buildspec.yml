@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build  # Builds the project
+  post_build:
+    commands:
+      - aws s3 sync build/ s3://618992-frontend-s3 --delete
+      - aws cloudfront create-invalidation --distribution-id EBXXZ5UWZBFRF --paths "/*"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: build  # Directory with output files (e.g., React app)
