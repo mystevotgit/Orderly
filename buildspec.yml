@@ -3,10 +3,10 @@ version: 0.2
 phases:
   install:
     commands:
+      - cd clothing‑store
       - npm install
   build:
     commands:
-      - cd clothing‑store
       - npm run build  # Builds the project
 artifacts:
   files:
