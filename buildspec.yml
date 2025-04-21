@@ -14,8 +14,8 @@ phases:
       - npm run build
       - echo "Build completed. Listing output directory:"
       - ls -al
-      - ls -al build
       - cd ..
+      - ls -al build
 artifacts:
   files:
     - '**/*'
