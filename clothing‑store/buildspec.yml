@@ -6,6 +6,7 @@ phases:
       - npm install
   build:
     commands:
+      - cd clothing‑store
       - npm run build  # Builds the project
 artifacts:
   files:
