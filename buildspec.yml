@@ -15,9 +15,8 @@ phases:
       - echo "Build completed. Listing output directory:"
       - ls -al
       - ls -al build
-      - cd ..
 artifacts:
   files:
     - '**/*'
-  base-directory: clothing-store/build  # Directory with output files (e.g, React app)
+  base-directory: build  # Directory with output files (e.g, React app)
   discard-paths: yes
