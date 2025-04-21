@@ -15,6 +15,10 @@ phases:
       - echo "Build completed. Listing output directory:"
       - ls -al
       - ls -al build
+  post_build:
+    commands:
+      - echo "Build complete. Verifying artifact location..."
+      - ls -R clothing-store/build
 artifacts:
   files:
     - '**/*'
