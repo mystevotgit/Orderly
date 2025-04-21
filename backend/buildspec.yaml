@@ -8,7 +8,7 @@ version: 0.2
           build:
             commands:
               - mkdir -p build
-              - zip -r build/BuildArtifact.zip . -x "node_modules/*" "*.git*" "build/*"
+              - zip -r build/lambda.zip . -x "node_modules/*" "*.git*" "build/*"
         artifacts:
           files:
-            - build/BuildArtifact.zip
+            - build/lambda.zip
