@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
+      - cd clothing‑store
       - npm install  # or npm install
   build:
     commands:
