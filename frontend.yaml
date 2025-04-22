@@ -8,7 +8,7 @@ Parameters:
     Default: frontend-3
   RepositoryId:
     Type: String
-    Default: mystevotgit/codepipeline-react
+    Default: mystevotgit/Orderly
   BranchName:
     Type: String
     Default: main
@@ -72,8 +72,8 @@ Resources:
         DefaultCacheBehavior:
           TargetOriginId: S3Origin
           ViewerProtocolPolicy: redirect-to-https
-          AllowedMethods: [GET, HEAD]
-          CachedMethods: [GET, HEAD]
+          AllowedMethods: [GET, HEAD, POST]
+          CachedMethods: [GET, HEAD, POST]
           ForwardedValues:
             QueryString: false
             Cookies:
